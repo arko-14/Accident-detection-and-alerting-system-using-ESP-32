@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .data-container {
+            margin-bottom: 20px;
+        }
+        .data-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ESP32 Data</h1>
+    <div class="data-container">
+        <h2>Acceleration Values</h2>
+        <div class="data-item">AccX: {{ data.accX }}</div>
+        <div class="data-item">AccY: {{ data.accY }}</div>
+        <div class="data-item">AccZ: {{ data.accZ }}</div>
+    </div>
+    <div class="data-container">
+        <h2>Jerk Values</h2>
+        <div class="data-item">JerkX: {{ data.jerkX }}</div>
+        <div class="data-item">JerkY: {{ data.jerkY }}</div>
+        <div class="data-item">JerkZ: {{ data.jerkZ }}</div>
+    </div>
+    <div class="data-container">
+        <h2>GPS Data</h2>
+        <div class="data-item">Latitude: {{ data.latitude }}</div>
+        <div class="data-item">Longitude: {{ data.longitude }}</div>
+    </div>
+</body>
+</html>
